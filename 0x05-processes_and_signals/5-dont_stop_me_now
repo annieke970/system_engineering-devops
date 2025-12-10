@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Stops the 4-to_infinity_and_beyond process
 
-# Safely kill all matching PIDs
-kill $(pgrep -f 4-to_infinity_and_beyond | xargs)
+# Find all PIDs of the 4-to_infinity_and_beyond script and kill them
+pkill -f 4-to_infinity_and_beyond
