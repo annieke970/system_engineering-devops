@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# 7-highlander: Displays "To infinity and beyond" indefinitely and prints a message on SIGTERM
+
+
+trap 'echo "I am invincible!!!"' SIGTERM
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+done
