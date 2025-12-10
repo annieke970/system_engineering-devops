@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script lists files in the current directory and prints only the part after the first dash
+
+for item in *; do
+    if [ -f "$item" ]; then
+        cut_part="${item#*-}"
+        echo "$cut_part"
+    fi
+done
